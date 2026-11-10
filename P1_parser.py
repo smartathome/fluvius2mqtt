@@ -100,7 +100,7 @@ class ParseTelegrams(threading.Thread):
         message = json.dumps(d, sort_keys=True, separators=(',', ':'))
         logger.debug(f'Message: {message}: >>')
         self.__mqtt.do_publish(topic, message, retain=False)
-
+      
     return
 
   def __decode_telegram_element(self, index, element, ts, listofjsondicts):
@@ -302,5 +302,6 @@ class ParseTelegrams(threading.Thread):
         self.__trigger.clear()
 
         self.__decode_telegrams(telegram)
+        logger.debug(f'Full telegram: {telegram}')
 
     logger.debug("<<")

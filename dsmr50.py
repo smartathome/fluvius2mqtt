@@ -113,11 +113,11 @@ definition = {
 
 "0-0:96.7.21.255":
   ["Number power failures", "elec", "power_failures", "^.*\((.*)\)",
-   "", "str", "0", "1", "60", "1", "mdi:transmission-tower-off"],
+   "", "str", "0", "1", "60", "0", "mdi:transmission-tower-off"],
 
 "0-0:96.7.9.255":
   ["Number long power failures", "elec", "long_power_failures", "^.*\((.*)\)",
-   "", "str", "0", "1", "60", "1", "mdi:transmission-tower-off"],
+   "", "str", "0", "1", "60", "0", "mdi:transmission-tower-off"],
 
 "0-0:96.14.0":
   ["Tariff indicator electricity", "elec", "tariff_indicator", "^.*\((.*)\)",
@@ -214,7 +214,7 @@ definition = {
 
 "1-0:32.36.0":
   ["Number voltage swells L1", "elec", "V_L1_sw", "^.*\((.*)\)",
-  "", "str", "0", "1", "1", "1", "mdi:elevation-rise"],
+  "", "str", "0", "1", "1", "0", "mdi:elevation-rise"],
 
 "1-0:52.36.0":
   ["Number voltage swells L2", "elec", "V_L2_sw", "^.*\((.*)\)",
@@ -226,7 +226,7 @@ definition = {
 
 "1-0:32.32.0":
   ["Number voltage sags L1", "elec", "V_L1_sa", "^.*\((.*)\)",
-  "", "str", "0", "1", "1", "1", "mdi:elevation-decline"],
+  "", "str", "0", "1", "1", "0", "mdi:elevation-decline"],
 
 "1-0:52.32.0":
   ["Number voltage sags L2", "elec", "V_L2_sa", "^.*\((.*)\)",
